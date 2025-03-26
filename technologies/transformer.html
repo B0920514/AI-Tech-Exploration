@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformer 架构 - AI 大语言模型概览</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">AI 大语言模型概览</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#llms">主流大模型</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#technologies">核心技术</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="mb-4">Transformer 架构</h1>
+                
+                <section class="mb-4">
+                    <h2>什么是 Transformer 架构？</h2>
+                    <p>Transformer 架构是一种革命性的深度学习模型架构，由 Google 在 2017 年通过论文《Attention Is All You Need》首次提出。它完全基于自注意力机制，摒弃了传统的循环神经网络（RNN）和卷积神经网络（CNN）结构。</p>
+                </section>
+
+                <section class="mb-4">
+                    <h2>核心组件</h2>
+                    <ul>
+                        <li><strong>自注意力机制（Self-Attention）</strong>：允许模型在处理序列时关注所有相关位置的信息</li>
+                        <li><strong>多头注意力（Multi-Head Attention）</strong>：并行处理多个注意力头，捕获不同类型的依赖关系</li>
+                        <li><strong>位置编码（Positional Encoding）</strong>：为输入序列中的每个位置添加位置信息</li>
+                        <li><strong>前馈神经网络（Feed-Forward Network）</strong>：对每个位置的特征进行非线性变换</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h2>优势</h2>
+                    <ul>
+                        <li>并行计算能力强，训练速度快</li>
+                        <li>可以处理长距离依赖关系</li>
+                        <li>模型结构简单，易于理解和实现</li>
+                        <li>可扩展性好，适合大规模预训练</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h2>应用场景</h2>
+                    <ul>
+                        <li>机器翻译</li>
+                        <li>文本摘要</li>
+                        <li>问答系统</li>
+                        <li>代码生成</li>
+                        <li>图像识别</li>
+                    </ul>
+                </section>
+
+                <div class="text-center mt-4">
+                    <a href="../index.html" class="btn btn-primary">返回首页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">© 2024 AI 大语言模型概览. 保留所有权利。</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html> 

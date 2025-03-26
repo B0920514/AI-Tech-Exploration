@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Large Language Models Overview</title>
+    <title>AI 大语言模型概览</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">AI LLMs Overview</a>
+            <a class="navbar-brand" href="#">AI 大语言模型概览</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#llms">Major LLMs</a>
+                        <a class="nav-link" href="#llms">主流大模型</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#technologies">Core Technologies</a>
+                        <a class="nav-link" href="#technologies">核心技术</a>
                     </li>
                 </ul>
             </div>
@@ -29,29 +29,37 @@
 
     <div class="container mt-5">
         <section id="llms" class="mb-5">
-            <h2 class="text-center mb-4">Major Large Language Models</h2>
+            <h2 class="text-center mb-4">主流大语言模型</h2>
             <div class="row">
-                <div class="col-md-4 mb-4">
+                <div class="col-md-3 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title">GPT-4</h5>
-                            <p class="card-text">Developed by OpenAI, GPT-4 is one of the most advanced language models with exceptional reasoning capabilities and multimodal understanding.</p>
+                            <p class="card-text">由 OpenAI 开发，是目前最先进的语言模型之一，具有出色的推理能力和多模态理解能力。</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-3 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title">Claude 3</h5>
-                            <p class="card-text">Created by Anthropic, Claude 3 offers advanced reasoning, analysis, and content generation with strong ethical considerations.</p>
+                            <p class="card-text">由 Anthropic 开发，提供强大的推理、分析和内容生成能力，同时注重伦理考虑。</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-3 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title">Gemini</h5>
-                            <p class="card-text">Google's Gemini model provides powerful multimodal capabilities and strong performance across various tasks.</p>
+                            <p class="card-text">Google 开发的多模态模型，在各种任务上表现出色，支持文本、图像等多种输入。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Deepseek</h5>
+                            <p class="card-text">专注于深度理解和知识探索的模型，在专业领域和学术研究方面表现优异。</p>
                         </div>
                     </div>
                 </div>
@@ -59,37 +67,45 @@
         </section>
 
         <section id="technologies" class="mb-5">
-            <h2 class="text-center mb-4">Core Technologies</h2>
+            <h2 class="text-center mb-4">核心技术</h2>
             <div class="row">
                 <div class="col-md-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Transformer Architecture</h5>
-                            <p class="card-text">The foundation of modern LLMs, using self-attention mechanisms to process sequential data efficiently.</p>
+                            <h5 class="card-title">
+                                <a href="technologies/transformer.html" class="text-decoration-none">Transformer 架构</a>
+                            </h5>
+                            <p class="card-text">现代大语言模型的基础架构，使用自注意力机制高效处理序列数据。</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Pre-training & Fine-tuning</h5>
-                            <p class="card-text">Two-stage training process where models are first pre-trained on large datasets and then fine-tuned for specific tasks.</p>
+                            <h5 class="card-title">
+                                <a href="technologies/training.html" class="text-decoration-none">预训练与微调</a>
+                            </h5>
+                            <p class="card-text">两阶段训练过程，先在大型数据集上预训练，然后针对特定任务进行微调。</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Attention Mechanisms</h5>
-                            <p class="card-text">Enables models to focus on relevant parts of input data, improving context understanding and generation quality.</p>
+                            <h5 class="card-title">
+                                <a href="technologies/attention.html" class="text-decoration-none">注意力机制</a>
+                            </h5>
+                            <p class="card-text">使模型能够关注输入数据中的相关部分，提高上下文理解和生成质量。</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Tokenization</h5>
-                            <p class="card-text">Process of converting text into tokens that can be processed by the model, crucial for efficient text processing.</p>
+                            <h5 class="card-title">
+                                <a href="technologies/tokenization.html" class="text-decoration-none">分词技术</a>
+                            </h5>
+                            <p class="card-text">将文本转换为模型可处理的标记，对高效的文本处理至关重要。</p>
                         </div>
                     </div>
                 </div>
@@ -98,7 +114,7 @@
     </div>
 
     <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0">© 2024 AI LLMs Overview. All rights reserved.</p>
+        <p class="mb-0">© 2024 AI 大语言模型概览. 保留所有权利。</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

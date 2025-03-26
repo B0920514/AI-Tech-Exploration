@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注意力机制 - AI 大语言模型概览</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">AI 大语言模型概览</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#llms">主流大模型</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#technologies">核心技术</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="mb-4">注意力机制</h1>
+                
+                <section class="mb-4">
+                    <h2>什么是注意力机制？</h2>
+                    <p>注意力机制是一种让模型能够动态关注输入序列中相关部分的技术。它通过计算不同位置之间的相关性权重，使模型能够根据上下文选择性地关注重要信息。</p>
+                </section>
+
+                <section class="mb-4">
+                    <h2>核心组件</h2>
+                    <ul>
+                        <li><strong>查询（Query）</strong>：当前需要关注的位置</li>
+                        <li><strong>键（Key）</strong>：用于计算相关性的参考信息</li>
+                        <li><strong>值（Value）</strong>：实际需要提取的信息</li>
+                        <li><strong>注意力分数</strong>：表示不同位置之间的相关性强度</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h2>注意力机制的类型</h2>
+                    <ul>
+                        <li><strong>自注意力（Self-Attention）</strong>：计算序列内部元素之间的关系</li>
+                        <li><strong>交叉注意力（Cross-Attention）</strong>：计算不同序列之间的关系</li>
+                        <li><strong>多头注意力（Multi-Head Attention）</strong>：并行计算多个注意力头</li>
+                        <li><strong>稀疏注意力（Sparse Attention）</strong>：只关注部分位置，提高效率</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h2>优势</h2>
+                    <ul>
+                        <li>能够捕获长距离依赖关系</li>
+                        <li>并行计算效率高</li>
+                        <li>可以处理变长序列</li>
+                        <li>具有可解释性</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h2>应用场景</h2>
+                    <ul>
+                        <li>机器翻译</li>
+                        <li>文本摘要</li>
+                        <li>图像识别</li>
+                        <li>语音识别</li>
+                        <li>推荐系统</li>
+                    </ul>
+                </section>
+
+                <div class="text-center mt-4">
+                    <a href="../index.html" class="btn btn-primary">返回首页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">© 2024 AI 大语言模型概览. 保留所有权利。</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html> 

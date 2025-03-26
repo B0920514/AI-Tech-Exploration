@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分词技术 - AI 大语言模型概览</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">AI 大语言模型概览</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#llms">主流大模型</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#technologies">核心技术</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="mb-4">分词技术</h1>
+                
+                <section class="mb-4">
+                    <h2>什么是分词技术？</h2>
+                    <p>分词技术是将输入文本转换为模型可以处理的离散单元（token）的过程。这是大语言模型处理文本的第一步，对模型的性能和效率有重要影响。</p>
+                </section>
+
+                <section class="mb-4">
+                    <h2>主要分词方法</h2>
+                    <ul>
+                        <li><strong>BPE（Byte-Pair Encoding）</strong>：基于字符对频率的分词方法</li>
+                        <li><strong>WordPiece</strong>：Google 开发的分词算法，用于 BERT 等模型</li>
+                        <li><strong>SentencePiece</strong>：支持多种语言的分词工具</li>
+                        <li><strong>Unigram</strong>：基于概率模型的分词方法</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h2>分词的特点</h2>
+                    <ul>
+                        <li><strong>子词单元</strong>：将词分解为更小的单元</li>
+                        <li><strong>词汇表大小</strong>：通常在数万到数十万之间</li>
+                        <li><strong>未知词处理</strong>：能够处理未见过的词</li>
+                        <li><strong>多语言支持</strong>：支持不同语言的分词</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h2>优势</h2>
+                    <ul>
+                        <li>减少词汇表大小</li>
+                        <li>提高模型泛化能力</li>
+                        <li>更好地处理未知词</li>
+                        <li>支持多语言处理</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h2>应用场景</h2>
+                    <ul>
+                        <li>文本预处理</li>
+                        <li>机器翻译</li>
+                        <li>文本生成</li>
+                        <li>命名实体识别</li>
+                        <li>文本分类</li>
+                    </ul>
+                </section>
+
+                <div class="text-center mt-4">
+                    <a href="../index.html" class="btn btn-primary">返回首页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">© 2024 AI 大语言模型概览. 保留所有权利。</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html> 

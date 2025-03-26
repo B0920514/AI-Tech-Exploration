@@ -1,6 +1,6 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.8;
     color: #333;
 }
 
@@ -9,35 +9,56 @@ body {
 }
 
 .card {
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
 }
 
 .card-title {
     color: #2c3e50;
     font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 .card-text {
     color: #666;
+    font-size: 1.1rem;
 }
 
 section {
     padding: 40px 0;
 }
 
-h2 {
+h1, h2 {
     color: #2c3e50;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
 }
 
 footer {
     margin-top: 50px;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
 }
 
 @media (max-width: 768px) {
@@ -48,4 +69,57 @@ footer {
     section {
         padding: 20px 0;
     }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+}
+
+/* 技术详情页面样式 */
+.technologies-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.technologies-content ul {
+    padding-left: 1.5rem;
+}
+
+.technologies-content li {
+    margin-bottom: 0.5rem;
+}
+
+.technologies-content strong {
+    color: #2c3e50;
+}
+
+/* 链接样式 */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* 导航栏样式 */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
 } 

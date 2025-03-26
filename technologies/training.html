@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>预训练与微调 - AI 大语言模型概览</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">AI 大语言模型概览</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#llms">主流大模型</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#technologies">核心技术</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="mb-4">预训练与微调</h1>
+                
+                <section class="mb-4">
+                    <h2>什么是预训练与微调？</h2>
+                    <p>预训练与微调是大语言模型训练的两个关键阶段。预训练阶段让模型在大规模通用数据集上学习基础语言知识，而微调阶段则针对特定任务进行优化。</p>
+                </section>
+
+                <section class="mb-4">
+                    <h2>预训练阶段</h2>
+                    <ul>
+                        <li><strong>数据规模</strong>：使用海量文本数据（通常达到数万亿个token）</li>
+                        <li><strong>训练目标</strong>：预测下一个token（自监督学习）</li>
+                        <li><strong>计算资源</strong>：需要大量GPU/TPU资源和长时间训练</li>
+                        <li><strong>模型规模</strong>：通常包含数十亿到数万亿个参数</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h2>微调阶段</h2>
+                    <ul>
+                        <li><strong>数据规模</strong>：使用较小规模的任务特定数据</li>
+                        <li><strong>训练目标</strong>：针对特定任务优化模型性能</li>
+                        <li><strong>训练方法</strong>：
+                            <ul>
+                                <li>全参数微调</li>
+                                <li>LoRA（低秩适应）</li>
+                                <li>Prompt Tuning</li>
+                                <li>P-Tuning</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h2>优势</h2>
+                    <ul>
+                        <li>提高模型泛化能力</li>
+                        <li>降低特定任务训练成本</li>
+                        <li>快速适应新任务</li>
+                        <li>保持基础语言能力</li>
+                    </ul>
+                </section>
+
+                <section class="mb-4">
+                    <h2>应用场景</h2>
+                    <ul>
+                        <li>特定领域问答</li>
+                        <li>专业文档生成</li>
+                        <li>代码补全</li>
+                        <li>多语言翻译</li>
+                        <li>情感分析</li>
+                    </ul>
+                </section>
+
+                <div class="text-center mt-4">
+                    <a href="../index.html" class="btn btn-primary">返回首页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">© 2024 AI 大语言模型概览. 保留所有权利。</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html> 

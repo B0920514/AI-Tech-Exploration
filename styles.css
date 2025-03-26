@@ -18,6 +18,23 @@ body {
     box-shadow: 0 8px 12px rgba(0,0,0,0.15);
 }
 
+/* 链接卡片样式 */
+a .card {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover .card {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+    border-color: #3498db;
+}
+
+a:hover .card-title {
+    color: #3498db;
+}
+
 .card-title {
     color: #2c3e50;
     font-weight: 600;

@@ -1,6 +1,6 @@
-# AI Large Language Models Overview
+# AI-Tech-Exploration
 
-This website provides an overview of major Large Language Models (LLMs) and their core technologies in the world.
+A serial of webpage to explore AI Technology, focusing on Large Language Models (LLMs) and their core technologies.
 
 ## Features
 - Introduction to major LLMs
@@ -20,4 +20,4 @@ This website provides an overview of major Large Language Models (LLMs) and thei
 3. Explore the content about LLMs and their technologies
 
 ## Contributing
-Feel free to contribute to this project by submitting pull requests or creating issues. 
+Feel free to contribute to this project by submitting pull requests or creating issues.
